@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 .header{
-    position: fixed;
     width: 100%;
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 55%, white 55%, white 100%);
 }
@@ -20,7 +19,9 @@ body {
     width: 160px;
     margin-left: 20px;
 }
+/* Navbar */
 .nav{
+    /* position: fixed; */
     background-color: black;
     display: grid;
     grid-template-columns: 3fr auto;
@@ -55,4 +56,72 @@ body {
     vertical-align: middle;
     padding: 10px .75rem;
 }
+/* // Navbar */
 
+.banner{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt6d553f4d07f1eb42/5ece1e0354e7166d098d099e/Careers-page-Banner-image_(1).png?format=pjpg&width=1210");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 65vh;
+    margin: 0 auto;
+}
+
+.banner-content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 50vh;
+    justify-content: center;
+}
+
+.banner-heading{
+    color: white;
+    grid-column: 4;
+    grid-row: 6;
+    font-size: 40px;
+}
+
+.heading-text{
+    text-align: center;
+    font-size: 32px;
+    color: #2d2d2d;
+}
+
+.heading-text::before {
+    content: "";
+    /* position: absolute; */
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #f13311;
+    bottom: 2px;
+    margin: 0 auto;
+    margin-top:126px;
+    margin-bottom: 12px;
+  }
+
+.header-text p{
+    text-align: center;
+    padding: 20px;
+}
+.responsive-banner-text{
+    background-color: black;
+    display: none;
+}
+.responsive-banner-text h2{
+    text-align: center;
+    margin: 0;
+    color: white;
+    padding: 10px;
+}
+@media (max-width: 767.98px) {
+    .responsive-banner-text{
+        display: block;
+    }
+    .banner-heading{
+        display: none;
+    }
+}
