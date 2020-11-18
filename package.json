@@ -1,0 +1,19 @@
+{
+  "name": "grid_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aachalV/careers_page.git"
+  },
+  "author": "aachalV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aachalV/careers_page/issues"
+  },
+  "homepage": "https://github.com/aachalV/careers_page#readme"
+}
